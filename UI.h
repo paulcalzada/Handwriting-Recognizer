@@ -9,6 +9,7 @@
 #define UI_H_
 #include "Network.h"
 
+
 class UI {
 	Network* network;
 public:
