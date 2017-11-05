@@ -11,9 +11,7 @@ struct nnimage {
 
   int value;
   MatrixXd data;
-  vector<int> size;
   
   nnimage(MatrixXd& data) : data(data) {}
-  nnimage(MatrixXd& data, vector<int> size) : data(data), size(size) {}  
-  nnimage(MatrixXd& data, vector<int> size, int value) : data(data), size(size), value(value) {}
+  nnimage(MatrixXd& data,  int value) : data(data), value(value) {}
 };
